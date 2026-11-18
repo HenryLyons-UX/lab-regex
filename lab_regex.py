@@ -177,7 +177,7 @@ def is_valid_email(s):
     False
     '''
     # TODO: use re.fullmatch for the entire email string, then bool the result.
-    if re.fullmatch(r"[\S]+@[\S]{3}\.edu", s):
+    if re.fullmatch(r'[\w.-]+@[\w.-]+\.\w+', s):
         return True
     else:
         return False
